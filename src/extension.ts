@@ -57,7 +57,9 @@ commands['Reload rc file'] = (E: any) => {
   let rc = E.expanduser(rcfile);
   E.readFile(rc).then((text: string) => {
     eval(`(async () => { ${text} })()`);
-    E.message(`${rc} loaded!`);
+    if(conf("showMessageOnRCLoad", true)) {
+      E.message(`${rc} loaded!`);
+    }
   });
 };
 

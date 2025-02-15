@@ -19,7 +19,7 @@
   "contributes": {
     "configuration": {
       "type": "object",
-      "title": "Easy Extensibility",
+      "title": "Facil Extensibility",
       "properties": {
         "easy-extensibility.rcFile": {
           "type": "string",
@@ -44,6 +44,11 @@
         "easy-extensibility.nodeModules": {
           "type": "string",
           "description": "Specifies the global node modules directory."
+        },
+        "easy-extensibility.showMessageOnRCLoad": {
+          "type": "boolean",
+          "default": true,
+          "description": "Specifies whether to show the rc file loaded message."
         }
       }
     },
