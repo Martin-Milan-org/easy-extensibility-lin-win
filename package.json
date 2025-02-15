@@ -7,15 +7,13 @@
   "icon": "graphics/logo.png",
   "publisher": "m1self",
   "engines": {
-    "vscode": "^1.68.0"
+    "vscode": "^1.75.0"
   },
   "categories": [
     "Other"
   ],
   "activationEvents": [
-    "onStartupFinished",
-    "onCommand:easy-extensibility.evaluateSelection",
-    "onCommand:easy-extensibility.executeRegisteredCommand"
+    "onStartupFinished"
   ],
   "main": "./out/extension.js",
   "contributes": {
@@ -44,8 +42,7 @@
           "description": "Specifies the date command on windows platform."
         },
         "easy-extensibility.nodeModules": {
-          "type": "array",
-          "default": [],
+          "type": "string",
           "description": "Specifies the global node modules directory."
         }
       }

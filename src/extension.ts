@@ -3,8 +3,9 @@ import * as fs from 'fs';
 import * as HJSON from 'hjson';
 import { randomUUID } from 'crypto';
 
-const vscodejs: any = require('vscodejs');
-let E: any = vscodejs(vscode);
+//const vscodejs: any = require('vscodejs');
+import vscodets from './vscodets';
+let E: any = vscodets(vscode);
 
 // ...existing code...
 
